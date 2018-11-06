@@ -340,12 +340,11 @@ $s2bs-form-control-transition: border-color ease-in-out .15s, box-shadow ease-in
 
     .select2-selection__rendered {
       box-sizing: border-box;
-      display: block;
       line-height: $s2bs-line-height;
       list-style: none;
-      margin: 0;
       overflow: hidden;
-      padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+      margin: 0;
+      padding: 0 $s2bs-padding-base-horizontal;
       width: 100%;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -364,17 +363,15 @@ $s2bs-form-control-transition: border-color ease-in-out .15s, box-shadow ease-in
       @include border-radius($s2bs-selection-choice-border-radius);
       cursor: default;
       float: left;
-      margin: 0 0 0 $s2bs-padding-base-horizontal/2;
-      padding: 0 $s2bs-padding-base-vertical;
+      margin: $s2bs-padding-base-vertical $s2bs-padding-base-horizontal/2 0 0;
+      padding: 0 $s2bs-padding-base-horizontal;
     }
 
     .select2-search--inline {
       .select2-search__field {
         background: transparent;
-        padding: 0 $s2bs-padding-base-horizontal;
-        height: $s2bs-input-height-base - 2;
-        line-height: $s2bs-line-height;
-        margin-top: 0;
+        padding: 0;
+        margin-top: $s2bs-padding-base-vertical;
         min-width: 5em;
       }
     }
